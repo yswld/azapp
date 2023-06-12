@@ -1,0 +1,19 @@
+{
+  "name": "azapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yswld@github.com/yswld/azapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yswld/azapp/issues"
+  },
+  "homepage": "https://github.com/yswld/azapp#readme"
+}
