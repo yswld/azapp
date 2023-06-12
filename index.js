@@ -1,10 +1,11 @@
-const http = require('http')
-const svr = http.createServer(handler)
-svr.listen(8080)
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 3000
 
-function handler (req, res) {
-  console.log('url:', req.url)
-  console.log('method:', req.method)
-  res.writeHead(200, {'Content-Type': 'text/html'})
-  res.end('<h1>Hello, World!</h1>\n')
-}
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
